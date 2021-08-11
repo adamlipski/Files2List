@@ -39,7 +39,7 @@ namespace Files2List
                 string fileName = openAnyFile.SafeFileName;
                 //var filesNames = openAnyFile.SafeFileNames;
 
-                folderPath = filePath.Remove(folderPath.Count() - fileName.Count());
+                folderPath = filePath.Remove(filePath.Count() - fileName.Count());
 
                 AllLines = Directory.GetFiles(folderPath);
                 AllFilesNames = AllLines.ToList();
